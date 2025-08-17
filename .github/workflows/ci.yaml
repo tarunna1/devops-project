@@ -61,10 +61,6 @@ jobs:
         with:
           version: 'latest'
 
-      - name: Build Docker image
-        run: |
-          docker build -t product-catalog-service:latest .
-
       - name: Docker Login
         uses: docker/login-action@v2
         with:
