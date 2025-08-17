@@ -75,6 +75,3 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/product-catalog:${{github.run_id}}
 
 
-  update_K8s_config:
-    needs: docker
-    runs-on: ubuntu-latest
